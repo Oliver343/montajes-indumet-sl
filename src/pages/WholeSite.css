@@ -1,0 +1,23 @@
+* {
+    background-color: rgb(27, 27, 27);
+    color: whitesmoke;
+    /* border: red 2px dashed; */
+    font-size: 30px;
+}
+
+.wholesite-body {
+    background-color: rgb(60, 60, 60);
+    color: whitesmoke;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: rgb(27, 27, 27);
+    color: whitesmoke;
+    height: 100px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
