@@ -2,7 +2,7 @@
     background-color: rgb(27, 27, 27);
     color: whitesmoke;
     /* border: red 2px dashed; */
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .wholesite-body {
@@ -15,9 +15,30 @@
     background-color: rgb(27, 27, 27);
     color: whitesmoke;
     height: 100px;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     padding-left: 2%;
     padding-right: 2%;
+}
+
+.poster-board {
+    background-image: url("../img/demo2.webp");
+    height: 500px;
+    background-position: center bottom;
+    background-size: 1500px 1000px;
+    display: flex;
+}
+
+.poster-text-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    height: 300px;
+    width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10%;
+    margin-top: 5%;
 }

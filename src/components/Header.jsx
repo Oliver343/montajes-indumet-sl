@@ -1,5 +1,10 @@
+import logo from '../img/logo.webp'
+
 export default function Header() {
     return (
-        <div className="header">MONTAJES INDUMET S.L.</div>
+        <div className="header">
+            <img src={logo} />
+            MONTAJES INDUMET S.L.
+        </div>
     )
 }
