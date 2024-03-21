@@ -42,9 +42,9 @@ export default function GalleryScroll() {
 
     return(
         <div className='gallery-scroll'>
-            <button className='sideButton' onClick={handleLeft}><i class="fa-solid fa-caret-left fa-2xl"></i></button>
+            <button className='sideButton' onClick={handleLeft}><i className="fa-solid fa-caret-left fa-2xl"></i></button>
             <img height={700} src={imgSet[currentImg]}/>
-            <button className='sideButton' onClick={handleRight}><i class="fa-solid fa-caret-right fa-2xl"></i></button>
+            <button className='sideButton' onClick={handleRight}><i className="fa-solid fa-caret-right fa-2xl"></i></button>
         </div>
     )
 }

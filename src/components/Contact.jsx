@@ -4,17 +4,17 @@ export default function Contact() {
     return(
         <div className="contact">
             <div className="contact-inner">
-                <i class="fa-solid fa-location-dot"></i> - C/ Landalucía 13, Vitoria-Gasteiz
+                <i className="fa-solid fa-location-dot"></i> - C/ Landalucía 13, Vitoria-Gasteiz
                 <br />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pol. Ind. Júndiz
                 <br />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01015
                 <br />
                 <br />
-                <i class="fa-solid fa-envelope"></i> - indumet.sl@hotmail.com
+                <i className="fa-solid fa-envelope"></i> - indumet.sl@hotmail.com
                 <br />
                 <br />
-                <i class="fa-solid fa-phone"></i> - 945 29 08 51
+                <i className="fa-solid fa-phone"></i> - 945 29 08 51
             </div>
 
             <div><img src={logo} /></div>
