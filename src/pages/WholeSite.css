@@ -20,6 +20,14 @@
     padding-right: 2%;
 }
 
+.title {
+    text-align: center;
+}
+
+.title-text {
+    font-size: 40px;
+}
+
 .poster-board {
     background-image: url("../img/demo2.webp");
     height: 900px;
@@ -57,7 +65,32 @@
 .body-text {
     font-size: 30px;
     width: 50%;
+    padding-left: 20px;
 }
+
+.site-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.gallery-scroll {
+    display: flex;
+}
+
+.sideButton {
+    padding: 15px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0);
+    color: aliceblue;
+    filter: drop-shadow(0px 0px 8px rgb(118, 118, 118));
+  }
 
 .contact {
     background-color: rgb(27, 27, 27);

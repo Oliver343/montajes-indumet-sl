@@ -2,7 +2,8 @@ import './WholeSite.css';
 import Header from "../components/Header";
 import PosterBoard from '../components/PosterBoard';
 import Contact from '../components/Contact';
-import picture from '../img/weld.webp'
+import weld from '../img/weld.webp'
+import GalleryScroll from '../components/GalleryScroll';
 
 export default function WholeSite() {
     return (
@@ -11,7 +12,7 @@ export default function WholeSite() {
             <PosterBoard />
             <div className='site-body'>
                 <div >
-                    <img className='body-img' src={picture} width={600}></img>
+                    <img className='body-img' src={weld} width={600}></img>
                 </div>
                 <div className='body-text'>
                     Estructuras metálicas, calderería media y fina, mantenimiento industrial,
@@ -19,7 +20,16 @@ export default function WholeSite() {
                     escaleras, vallas....
                 </div>
             </div>
-
+            <div className='title'>
+                <h1 className='title-text'>Trabajos Realizados</h1>
+            </div>
+            <div className='site-gallery'>
+                <GalleryScroll />
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
             <Contact />
         </div>
     )
