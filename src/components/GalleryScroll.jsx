@@ -23,6 +23,11 @@ import img20 from '../img/img (303).webp'
 export default function GalleryScroll() {
     const imgSet = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20]
     const [currentImg, setCurrentImg] = useState(0)
+    const [width, setWidth] = useState(window.innerWidth)
+
+    function handleResize() {
+        setWidth(window.innerWidth)
+      }
 
     function handleLeft() {
         if (currentImg === 0) {
@@ -40,10 +45,12 @@ export default function GalleryScroll() {
         }
     }
 
+    window.addEventListener('resize', handleResize);
+
     return(
         <div className='gallery-scroll'>
             <button className='sideButton' onClick={handleLeft}><i className="fa-solid fa-caret-left fa-2xl"></i></button>
-            {/* <img width={"50%"} src={imgSet[currentImg]} alt=""/> */} IMAGE GOES HERE
+            <img width={width / 2} src={imgSet[currentImg]} alt=""/>
             <button className='sideButton' onClick={handleRight}><i className="fa-solid fa-caret-right fa-2xl"></i></button>
         </div>
     )
