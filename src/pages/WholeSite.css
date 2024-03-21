@@ -122,3 +122,17 @@ hr {
     padding: 20px;
     border-radius: 20px;
 }
+
+
+.the-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.small-image {
+    width: 400px;
+    border: 2px white solid;
+    margin: 10px;
+}
