@@ -17,7 +17,7 @@ export default function Contact() {
                 <i className="fa-solid fa-phone"></i> - 945 29 08 51
             </div>
 
-            <div><img src={logo} /></div>
+            <div><img src={logo} alt=""/></div>
         </div>
     )
 }
