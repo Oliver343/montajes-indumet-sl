@@ -12,7 +12,7 @@ export default function WholeSite() {
             <PosterBoard />
             <div className='site-body'>
                 <div >
-                    <img className='body-img' src={weld} width={600}></img>
+                    <img className='body-img' src={weld} width={600} alt=""></img>
                 </div>
                 <div className='body-text'>
                     Estructuras metálicas, calderería media y fina, mantenimiento industrial,
