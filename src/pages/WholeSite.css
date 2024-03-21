@@ -1,12 +1,11 @@
 * {
-    /* border: red 2px dashed; */
+    border: red 2px dashed;
 }
 
 .wholesite-body {
     background-color: rgb(60, 60, 60);
     color: whitesmoke;
     min-height: 100vh;
-    min-width: 100vh;
 }
 
 .header {
