@@ -18,9 +18,20 @@ hr {
     color: whitesmoke;
     height: 100px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding-left: 2%;
     padding-right: 2%;
+}
+
+.inner-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-link{
+    padding-left: 20px;
 }
 
 .title {
