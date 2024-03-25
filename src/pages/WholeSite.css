@@ -18,9 +18,20 @@ hr {
     color: whitesmoke;
     height: 100px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding-left: 2%;
     padding-right: 2%;
+}
+
+.inner-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-link{
+    padding-left: 20px;
 }
 
 .title {
@@ -121,4 +132,18 @@ hr {
     border: white 2px solid;
     padding: 20px;
     border-radius: 20px;
+}
+
+
+.the-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.small-image {
+    width: 400px;
+    border: 2px white solid;
+    margin: 10px;
 }
