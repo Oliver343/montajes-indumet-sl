@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import './WholeSite.css';
 import Header from "../components/Header";
 import PosterBoard from '../components/PosterBoard';
@@ -29,16 +29,44 @@ import img20 from '../img/img (303).webp'
 
 
 export default function WholeSite() {
-    const [galleryPage, setGalleryPage] = useState(true)
+    const [galleryPage, setGalleryPage] = useState(false)
+    const contactRef = useRef();
+    const topAnchor = useRef();
+    const aboutAnchor = useRef();
     const imgSet = [img1, img2, img5, img3, img4,  img18, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img19, img20]
+
+    function handleGallery() {
+        setGalleryPage(() => true)
+    }
+
+    function handleHome() {
+        setGalleryPage(() => false);
+        topAnchor.current?.scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
+
+    function handleAbout() {
+        setGalleryPage(() => false);
+        aboutAnchor.current?.scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
 
     return (
         <div className='wholesite-body'>
-            <Header />
+            <div ref={topAnchor}></div>
+            <Header handleGallery={handleGallery} handleHome={handleHome} handleAbout={handleAbout} />
+            <button onClick={() => {
+                contactRef.current?.scrollIntoView({
+                    behavior: 'smooth'
+                })
+            }}>z</button>
 
             {galleryPage ? <Gallery imgSet={imgSet} /> : 
                     <>
                         <PosterBoard />
+                        <div ref={aboutAnchor}></div>
                         <br />
                         <br />
                         <br />
@@ -47,8 +75,8 @@ export default function WholeSite() {
                             <div >
                                 <img className='body-img' src={weld} width={"100%"} alt=""></img>
                             </div>
-                            <div className='body-text'>
-                                <h1 className='title-text'>Quiénes Somos</h1>
+                            <div className='body-text' >
+                                <h1 className='title-text' >Quiénes Somos</h1>
                                 Estructuras metálicas, calderería media y fina, mantenimiento industrial,
                                 carpintería metálica, soldaduras especiales, cubiertas, canalones, barandillas,
                                 escaleras, vallas....
@@ -74,8 +102,10 @@ export default function WholeSite() {
                     </>
             }
 
-
-            <Contact />
+            <div ref={contactRef}>
+                <Contact />
+            </div>
+            
         </div>
     )
 }

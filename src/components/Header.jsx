@@ -1,6 +1,6 @@
 import logo from '../img/logo.webp'
 
-export default function Header() {
+export default function Header({handleGallery, handleHome, handleAbout}) {
     return (
         <div className="header">
             <div className='inner-head'>
@@ -8,9 +8,9 @@ export default function Header() {
                 <h1>MONTAJES INDUMET S.L.</h1>
             </div>
             <div className='inner-head'>
-                <a className='header-link'>HOME</a>
-                <a className='header-link'>ABOUT</a>
-                <a className='header-link'>GALLERY</a>
+                <button className='header-link' onClick={handleHome} >HOME</button>
+                <button className='header-link' onClick={handleAbout}>ABOUT</button>
+                <button className='header-link' onClick={handleGallery} >GALLERY</button>
             </div>
         </div>
     )
