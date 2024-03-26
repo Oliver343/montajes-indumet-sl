@@ -53,15 +53,16 @@ export default function WholeSite() {
         })
     }
 
+    function handleContact() {
+        contactRef.current?.scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
+
     return (
         <div className='wholesite-body'>
             <div ref={topAnchor}></div>
-            <Header handleGallery={handleGallery} handleHome={handleHome} handleAbout={handleAbout} />
-            <button onClick={() => {
-                contactRef.current?.scrollIntoView({
-                    behavior: 'smooth'
-                })
-            }}>z</button>
+            <Header handleGallery={handleGallery} handleHome={handleHome} handleAbout={handleAbout} handleContact={handleContact} />
 
             {galleryPage ? <Gallery imgSet={imgSet} /> : 
                     <>
