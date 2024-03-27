@@ -31,18 +31,19 @@ hr {
 }
 
 .header-link{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: whitesmoke;
     background-color: black;
     border: 2px white bottom;
 }
 
 .header-button{
+    font-size: large;
     padding: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 20px;
     border-radius: 50px;
     border: none;
     background-color: rgba(0, 0, 0);
@@ -65,8 +66,8 @@ hr {
 .poster-text-box {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 10%;
@@ -89,6 +90,10 @@ hr {
 .body-text {
     width: 50%;
     padding-left: 3%;
+}
+
+.body-text-text {
+    font-size: large;
 }
 
 .site-gallery {

@@ -78,9 +78,11 @@ export default function WholeSite() {
                             </div>
                             <div className='body-text' >
                                 <h1 className='title-text' >Quiénes Somos</h1>
-                                Estructuras metálicas, calderería media y fina, mantenimiento industrial,
-                                carpintería metálica, soldaduras especiales, cubiertas, canalones, barandillas,
-                                escaleras, vallas....
+                                <p className='body-text-text'>
+                                    Estructuras metálicas, calderería media y fina, mantenimiento industrial,
+                                    carpintería metálica, soldaduras especiales, cubiertas, canalones, barandillas,
+                                    escaleras, vallas....
+                                </p>
                             </div>
                         </div>
                         <br />
@@ -98,7 +100,7 @@ export default function WholeSite() {
                         </div>
                         <br />
                         <div className='site-gallery'>
-                            <button className='header-button' onClick={handleGallery}>View full gallery</button>
+                            <button className='header-button' onClick={handleGallery}>Ver Galería Completa</button>
                         </div>
                         <br />
                         <br />

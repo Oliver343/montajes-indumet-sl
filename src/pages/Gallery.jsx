@@ -28,7 +28,7 @@ export default function Gallery(props) {
         </div>
         <br />
         <div className='site-gallery'>
-                            <button className='header-button' onClick={props.handleHome}>View full gallery</button>
+                            <button className='header-button' onClick={props.handleHome}>Volver a Página Principal</button>
         </div>
         <br />
         </>
