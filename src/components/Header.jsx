@@ -4,7 +4,7 @@ export default function Header({handleGallery, handleHome, handleAbout, handleCo
     return (
         <div className="header">
             <div className='inner-head'>
-                <img src={logo} alt="" />
+                <img width="60px" src={logo} alt="" />&nbsp;&nbsp;&nbsp;
                 <h1>MONTAJES INDUMET S.L.</h1>
             </div>
             <div className='inner-head'>
