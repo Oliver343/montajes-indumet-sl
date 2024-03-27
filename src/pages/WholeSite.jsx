@@ -35,6 +35,17 @@ export default function WholeSite() {
     const aboutAnchor = useRef();
     const imgSet = [img1, img2, img5, img3, img4,  img18, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img19, img20]
 
+    const [width, setWidth] = useState(window.innerWidth)
+
+    function handleResize() {
+        setWidth(window.innerWidth)
+        console.log(width)
+      }
+
+    const smallSet = (width < 800)
+    
+    window.addEventListener('resize', handleResize);
+
     function handleGallery() {
         setGalleryPage(() => true)
     }
@@ -117,7 +128,7 @@ export default function WholeSite() {
             }
 
             <div ref={contactRef}>
-                <Contact />
+                <Contact smallSet={smallSet}/>
             </div>
             
         </div>

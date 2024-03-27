@@ -152,6 +152,18 @@ hr {
     flex-wrap: wrap;
 }
 
+.contact-mobile {
+    background-color: rgb(27, 27, 27);
+    color: whitesmoke;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .contact-inner {
     font-size: inherit;
     border: white 2px solid;
