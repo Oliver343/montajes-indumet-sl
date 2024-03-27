@@ -63,7 +63,7 @@ export default function WholeSite() {
         <div className='wholesite-body'>
             <div ref={topAnchor}></div>
             <Header handleGallery={handleGallery} handleHome={handleHome} handleAbout={handleAbout} handleContact={handleContact} />
-
+            TOP GEAR
             {galleryPage ? <Gallery imgSet={imgSet} handleHome={handleHome} /> : 
                     <>
                         <PosterBoard />
