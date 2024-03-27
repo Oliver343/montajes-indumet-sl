@@ -1,6 +1,6 @@
-* {
-    /* border: red 2px dashed; */
-}
+/* * {
+    border: red 2px dashed;
+} */
 
 hr {
     width: 80%;
@@ -88,7 +88,7 @@ hr {
 }
 
 .body-text {
-    width: 50%;
+    width: 30%;
     padding-left: 3%;
 }
 

@@ -73,16 +73,24 @@ export default function WholeSite() {
                         <br />
                         <br />
                         <div className='site-body'>
-                            <div >
-                                <img className='body-img' src={weld} width={"100%"} alt=""></img>
-                            </div>
+
                             <div className='body-text' >
                                 <h1 className='title-text' >Que Hacemos</h1>
-                                <p className='body-text-text'>
-                                    Estructuras metálicas, calderería media y fina, mantenimiento industrial,
-                                    carpintería metálica, soldaduras especiales, cubiertas, canalones, barandillas,
-                                    escaleras, vallas....
-                                </p>
+                                <ul>
+                                    <li>Estructuras metálicas</li>
+                                    <li>Calderería media y fina</li>
+                                    <li>Mantenimiento industrial</li>
+                                    <li>Carpintería metálica</li>
+                                    <li>Soldaduras especiales</li>
+                                    <li>Cubiertas</li>
+                                    <li>Canalones</li>
+                                    <li>Barandillas</li>
+                                    <li>Escaleras</li>
+                                    <li>Vallas</li>
+                                </ul>
+                            </div>
+                            <div >
+                                <img className='body-img' src={weld} width={"100%"} alt=""></img>
                             </div>
                         </div>
                         <br />
