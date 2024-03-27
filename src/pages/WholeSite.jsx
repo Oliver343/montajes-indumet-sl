@@ -73,8 +73,7 @@ export default function WholeSite() {
     return (
         <div className='wholesite-body'>
             <div ref={topAnchor}></div>
-            <Header handleGallery={handleGallery} handleHome={handleHome} handleAbout={handleAbout} handleContact={handleContact} />
-            TOP GEAR
+            <Header smallSet={smallSet} handleGallery={handleGallery} handleHome={handleHome} handleAbout={handleAbout} handleContact={handleContact} />
             {galleryPage ? <Gallery imgSet={imgSet} handleHome={handleHome} /> : 
                     <>
                         <PosterBoard />
@@ -84,7 +83,11 @@ export default function WholeSite() {
                         <br />
                         <br />
                         <div className='site-body'>
-
+                            {smallSet ? "" : 
+                            <div >
+                                <img className='body-img' src={weld} width={"100%"} alt=""></img>
+                            </div>
+                            }
                             <div className='body-text' >
                                 <h1 className='title-text' >Que Hacemos</h1>
                                 <ul>
@@ -99,9 +102,6 @@ export default function WholeSite() {
                                     <li>Escaleras</li>
                                     <li>Vallas</li>
                                 </ul>
-                            </div>
-                            <div >
-                                <img className='body-img' src={weld} width={"100%"} alt=""></img>
                             </div>
                         </div>
                         <br />

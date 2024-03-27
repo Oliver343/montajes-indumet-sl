@@ -1,10 +1,11 @@
 import logo from '../img/logo.webp'
 
-export default function Header({handleGallery, handleHome, handleAbout, handleContact}) {
+export default function Header({smallSet, handleGallery, handleHome, handleAbout, handleContact}) {
     return (
         <div className="header">
             <div className='inner-head'>
-                <img width="10%" src={logo} alt="" />&nbsp;&nbsp;&nbsp;
+                {smallSet ? "" : <img width="60px" src={logo} alt="" />} &nbsp;&nbsp;&nbsp;
+                
                 <h1>MONTAJES INDUMET S.L.</h1>
             </div>
             <div className='inner-head'>
