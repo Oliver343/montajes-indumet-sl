@@ -31,12 +31,14 @@ hr {
 }
 
 .header-link{
+    font-weight: bold;
+    font-size: medium;
     padding: 10px;
     padding-left: 10px;
     padding-right: 10px;
     color: whitesmoke;
-    background-color: black;
-    border: 2px white bottom;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 
 .header-button{

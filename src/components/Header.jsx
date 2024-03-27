@@ -9,8 +9,11 @@ export default function Header({handleGallery, handleHome, handleAbout, handleCo
             </div>
             <div className='inner-head'>
                 <button className='header-link' onClick={handleHome} >Pagina de Inicio</button>
+                -
                 <button className='header-link' onClick={handleAbout}>Que Hacemos</button>
+                -
                 <button className='header-link' onClick={handleContact}>Contacto</button>
+                -
                 <button className='header-link' onClick={handleGallery} >Galería</button>
             </div>
         </div>
