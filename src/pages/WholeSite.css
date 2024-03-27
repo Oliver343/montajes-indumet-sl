@@ -38,6 +38,18 @@ hr {
     border: 2px white bottom;
 }
 
+.header-button{
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0);
+    color: aliceblue;
+    filter: drop-shadow(0px 0px 8px rgb(118, 118, 118));
+}
+
 .title {
     text-align: center;
 }

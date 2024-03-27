@@ -27,6 +27,9 @@ export default function Gallery(props) {
             {imgMap}
         </div>
         <br />
+        <div className='site-gallery'>
+                            <button className='header-button' onClick={props.handleHome}>View full gallery</button>
+        </div>
         <br />
         </>
     )

@@ -64,7 +64,7 @@ export default function WholeSite() {
             <div ref={topAnchor}></div>
             <Header handleGallery={handleGallery} handleHome={handleHome} handleAbout={handleAbout} handleContact={handleContact} />
 
-            {galleryPage ? <Gallery imgSet={imgSet} /> : 
+            {galleryPage ? <Gallery imgSet={imgSet} handleHome={handleHome} /> : 
                     <>
                         <PosterBoard />
                         <div ref={aboutAnchor}></div>
@@ -97,6 +97,9 @@ export default function WholeSite() {
                             <GalleryScroll imgSet={imgSet} />
                         </div>
                         <br />
+                        <div className='site-gallery'>
+                            <button className='header-button' onClick={handleGallery}>View full gallery</button>
+                        </div>
                         <br />
                         <br />
                         <br />
