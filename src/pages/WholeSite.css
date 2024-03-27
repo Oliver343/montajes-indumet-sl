@@ -16,7 +16,7 @@ hr {
 .header {
     background-color: rgb(27, 27, 27);
     color: whitesmoke;
-    height: 100px;
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +28,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .header-link{
@@ -59,7 +60,7 @@ hr {
 
 .poster-board {
     background-image: url("../img/demo2.webp");
-    height: 700px;
+    min-height: 700px;
     background-position: center;
     background-size: 1900px 1300px;
     display: flex;
@@ -144,10 +145,11 @@ hr {
 .contact {
     background-color: rgb(27, 27, 27);
     color: whitesmoke;
-    height: 400px;
+    min-height: 400px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .contact-inner {
