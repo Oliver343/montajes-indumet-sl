@@ -77,7 +77,7 @@ export default function WholeSite() {
                                 <img className='body-img' src={weld} width={"100%"} alt=""></img>
                             </div>
                             <div className='body-text' >
-                                <h1 className='title-text' >Quiénes Somos</h1>
+                                <h1 className='title-text' >Que Hacemos</h1>
                                 <p className='body-text-text'>
                                     Estructuras metálicas, calderería media y fina, mantenimiento industrial,
                                     carpintería metálica, soldaduras especiales, cubiertas, canalones, barandillas,

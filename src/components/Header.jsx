@@ -8,10 +8,10 @@ export default function Header({handleGallery, handleHome, handleAbout, handleCo
                 <h1>MONTAJES INDUMET S.L.</h1>
             </div>
             <div className='inner-head'>
-                <button className='header-link' onClick={handleHome} >HOME</button>
-                <button className='header-link' onClick={handleAbout}>ABOUT</button>
-                <button className='header-link' onClick={handleContact}>CONTACT</button>
-                <button className='header-link' onClick={handleGallery} >GALLERY</button>
+                <button className='header-link' onClick={handleHome} >Pagina de Inicio</button>
+                <button className='header-link' onClick={handleAbout}>Que Hacemos</button>
+                <button className='header-link' onClick={handleContact}>Contacto</button>
+                <button className='header-link' onClick={handleGallery} >Galería</button>
             </div>
         </div>
     )
