@@ -74,7 +74,7 @@ export default function WholeSite() {
         <div className='wholesite-body'>
             <div ref={topAnchor}></div>
             <Header smallSet={smallSet} handleGallery={handleGallery} handleHome={handleHome} handleAbout={handleAbout} handleContact={handleContact} />
-            TOP KEK
+            {width}
             {galleryPage ? <Gallery imgSet={imgSet} handleHome={handleHome} /> : 
                     <>
                         <PosterBoard />
