@@ -35,6 +35,17 @@ export default function WholeSite() {
     const aboutAnchor = useRef();
     const imgSet = [img1, img2, img5, img3, img4,  img18, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img19, img20]
 
+    const [width, setWidth] = useState(window.innerWidth)
+
+    function handleResize() {
+        setWidth(window.innerWidth)
+        console.log(width)
+      }
+
+    const smallSet = (width < 800)
+    
+    window.addEventListener('resize', handleResize);
+
     function handleGallery() {
         setGalleryPage(() => true)
     }
@@ -62,9 +73,8 @@ export default function WholeSite() {
     return (
         <div className='wholesite-body'>
             <div ref={topAnchor}></div>
-            <Header handleGallery={handleGallery} handleHome={handleHome} handleAbout={handleAbout} handleContact={handleContact} />
-
-            {galleryPage ? <Gallery imgSet={imgSet} /> : 
+            <Header smallSet={smallSet} handleGallery={handleGallery} handleHome={handleHome} handleAbout={handleAbout} handleContact={handleContact} />
+            {galleryPage ? <Gallery imgSet={imgSet} handleHome={handleHome} /> : 
                     <>
                         <PosterBoard />
                         <div ref={aboutAnchor}></div>
@@ -73,14 +83,25 @@ export default function WholeSite() {
                         <br />
                         <br />
                         <div className='site-body'>
+                            {smallSet ? "" : 
                             <div >
                                 <img className='body-img' src={weld} width={"100%"} alt=""></img>
                             </div>
+                            }
                             <div className='body-text' >
-                                <h1 className='title-text' >Quiénes Somos</h1>
-                                Estructuras metálicas, calderería media y fina, mantenimiento industrial,
-                                carpintería metálica, soldaduras especiales, cubiertas, canalones, barandillas,
-                                escaleras, vallas....
+                                <h1 className='title-text' >Que Hacemos</h1>
+                                <ul>
+                                    <li>Estructuras metálicas</li>
+                                    <li>Calderería media y fina</li>
+                                    <li>Mantenimiento industrial</li>
+                                    <li>Carpintería metálica</li>
+                                    <li>Soldaduras especiales</li>
+                                    <li>Cubiertas</li>
+                                    <li>Canalones</li>
+                                    <li>Barandillas</li>
+                                    <li>Escaleras</li>
+                                    <li>Vallas</li>
+                                </ul>
                             </div>
                         </div>
                         <br />
@@ -97,6 +118,9 @@ export default function WholeSite() {
                             <GalleryScroll imgSet={imgSet} />
                         </div>
                         <br />
+                        <div className='site-gallery'>
+                            <button className='header-button' onClick={handleGallery}>Ver Galería Completa</button>
+                        </div>
                         <br />
                         <br />
                         <br />
@@ -104,7 +128,7 @@ export default function WholeSite() {
             }
 
             <div ref={contactRef}>
-                <Contact />
+                <Contact smallSet={smallSet}/>
             </div>
             
         </div>
