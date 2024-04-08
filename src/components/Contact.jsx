@@ -11,7 +11,7 @@ export default function Contact({smallSet}) {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 01015
                 <br />
                 <br />
-                <i className="fa-solid fa-envelope"></i> - indumet.sl@hotmail.com
+                <i className="fa-solid fa-envelope"></i> - indumet.sl@gmail.com
                 <br />
                 <br />
                 <i className="fa-solid fa-phone"></i> - 945 29 08 51
