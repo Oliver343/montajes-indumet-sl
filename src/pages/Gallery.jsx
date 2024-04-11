@@ -19,7 +19,7 @@ export default function Gallery(props) {
         <>
         <br />
         <br />
-        <h1 className="title">La Galería De Trabajos Realizados</h1>
+        <h1 className="title">Galería De Trabajos Realizados</h1>
         <hr />
         <br />
         <div className="the-gallery">
